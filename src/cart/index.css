@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.loading{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.empty{
+    text-align: center;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+.navbar {
+    display: flex;
+    background-color: rgb(0 119 167);
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    height: 4.5rem;
+}
+
+.cartBag {
+    position: relative;
+}
+
+.cartBag>svg {
+    font-size: 1.7rem;
+}
+
+.totalItems {
+    top: -12px;
+    right: -13px;
+    position: absolute;
+    background-color: skyblue;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    padding: 4px;
+}
+
+.cart-Container {
+    margin-top: 3rem;
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+.cart-center {
+    width: 50%;
+}
+
+.cart-center>h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.underline {
+    width: 100%;
+    height: 3px;
+    background-color: darkgray;
+    border-radius: 12px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 8px;
+}
+.clear{
+    margin: .8rem 0 2rem 0;
+    text-align: center;
+}
+.btn{
+font-weight: bolder;
+font-family: sans-serif;
+   padding: 8px 10px;
+   text-transform: uppercase;
+   background-color: transparent;
+   border: 2px solid darkgray;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: all .2s linear;
+}
+.clearBtn:hover{
+    color: tomato;
+    border-color: tomato;
+}
+.btn:active{
+    transform: scale(.97);
+}
+.cartItems{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.item-info{
+    display: flex;
+}
+.item-img{
+    height: 70px;
+    margin-right: 1.2rem;
+
+}
+.item-img > img{
+    height: 100%;
+    width: 100%;
+}
+.item-des> p {
+    font-size: .91rem;
+    color: rgb(104, 102, 102);
+}
+.item-amount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.remove{
+    padding: 8px 4px 8px 0px;
+    letter-spacing: 2px;
+}
+.btnCommon{
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 4px;
+    color: rgb(0, 132, 184);
+    cursor: pointer;
+    transition: all .2s linear;
+    font-weight: bold;
+    padding: 0;
+    
+}
+.btnCommon:hover{
+    color: rgb(1, 93, 129);
+}
+.btn:active.btn > svg{
+    transform: scale(.93);
+}
+.btn > svg{
+    padding: 0;
+    height: 22px;
+    width: 22px;
+    color: rgb(0, 128, 179);
+}
+.amount{
+    margin-top: -8px;
+    margin-bottom: -4px;
+    font-size: 1.2rem;
+}
+.Modal-overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background:rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    transition:  all .2s linear;
+}
+.hidden{
+    display: none;
+    z-index: -1;
+}
+.modal{
+    background: #fff;
+    border-radius: 4px;
+    padding: 2rem 1rem;
+    text-align: center;
+    width: 80vw;
+    max-width: 400px;
+    box-shadow: 0px 0px 8px -2px black;
+}
+.modal > p{
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.choice-Btn{
+    margin:.5rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.Confirm{
+    border-color: rgb(57, 57, 255);
+    color:rgb(57, 57, 255) ;
+
+}
+.choice-Btn > .clearBtn{
+    color: tomato;
+    border-color: tomato;
+}
