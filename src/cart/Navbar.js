@@ -5,7 +5,7 @@ const Navbar = () => {
   const {amount} = useSelector((state)=>state.cart);
   return (
     <nav className="navbar">
-        <h1>ReduxToolKit</h1>
+        <h1>OPMobiles</h1>
         <div className="cartBag">
         <FaShoppingBag/>
         <p className="totalItems">{amount}</p>
