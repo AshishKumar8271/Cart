@@ -43,7 +43,7 @@ const Mobiles = () => {
                 </button>
               </div>
             </div>
-          );
+          )
         })}
         
         <TotalPrice />

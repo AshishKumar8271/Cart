@@ -8,7 +8,7 @@ const App = () => {
   const {totalAmt,modal} = UseGlobalHook();
   return (
 
-    <div>
+    <div className="min-h-screen pb-10">
       <nav className="bg-sky-400">
         <div className="w-4/5 mx-auto flex justify-between py-3 text-xl text-white font-semibold items-center tracking-wider">
           <h1 className="">OPMobiles</h1>
